@@ -7,7 +7,7 @@
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:background="@drawable/navigation_banner">
+    android:background="@drawable/navigation_background">
     
     <ImageView
         android:layout_width="56dp"
