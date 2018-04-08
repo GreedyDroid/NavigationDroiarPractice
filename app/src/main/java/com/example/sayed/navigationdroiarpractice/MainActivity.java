@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToNavigationDRActivity(View view) {
-        startActivity(new Intent(MainActivity.this, NavigationActivity.class));
+        startActivity(new Intent(MainActivity.this, Main2Activity.class));
     }
 }
