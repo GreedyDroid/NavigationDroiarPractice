@@ -1,9 +1,11 @@
 package com.example.sayed.navigationdroiarpractice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbarID);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -34,8 +37,18 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Item Two Selected", Toast.LENGTH_SHORT).show();
         }else if (id == R.id.itemThree){
             Toast.makeText(this, "Item Three Selected", Toast.LENGTH_SHORT).show();
+        }else if (id== R.id.searchMenu){
+            Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
+        }else if (id == R.id.chartMenu){
+            Toast.makeText(this, "Cart", Toast.LENGTH_SHORT).show();
+        }else if (id == android.R.id.home){
+            finish();
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goToNavigationDRActivity(View view) {
+        startActivity(new Intent(MainActivity.this, NavigationActivity.class));
     }
 }

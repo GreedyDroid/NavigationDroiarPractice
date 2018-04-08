@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/itemOne"
         android:title="@string/itemOne"/>
@@ -7,4 +8,12 @@
         android:title="@string/item_two"/>
     <item android:id="@+id/itemThree"
         android:title="@string/item_three"/>
+    <item android:id="@+id/chartMenu"
+        android:title=""
+        android:icon="@drawable/cart"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/searchMenu"
+        android:title=""
+        android:icon="@drawable/magnify"
+        app:showAsAction="always"/>
 </menu>

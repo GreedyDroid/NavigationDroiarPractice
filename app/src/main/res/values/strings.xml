@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">NavigationDroiarPractice</string>
+    <string name="app_name">NavigationDRPractice</string>
     <string name="itemOne">Item One</string>
     <string name="item_two">Item Two</string>
     <string name="item_three">Item Three</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">close Navigation Drawer </string>
 </resources>
